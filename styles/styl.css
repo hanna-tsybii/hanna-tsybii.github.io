@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+* {
+	margin: 10;
+	padding: 10;
+	box-sizing: content-box;
+	font-family: 'Alkatra', cursive;
+}
+body {
+	background-color: #F0F0F0;
+}
+.main {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	background-color: #FFFFFF;
+
+}
+.about {
+	margin-top: 40px;
+	margin-left: 80px;
+	margin-right: 275px;
+	margin-bottom: 14px;
+	padding-bottom: 5px;
+}
+h1 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 55px;
+}
+.about__site {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+}
+.about__text {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+}
+.dop__contact {
+	margin-left: 80px;
+	padding-bottom: 5px;
+}
+.list {
+	padding: 0;
+	margin-left: 18px;
+}
+h3 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 24px;
+}
+.dop__cont {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+}
+.f__t {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	color: darkblue;
+}
+.education {
+	margin-left: 80px;
+	padding-bottom: 5px;
+}
+.work {
+	margin-left: 80px;
+}
+.aside {
+	background-color: #828FA9;
+	color: ghostwhite;
+	padding-top: 10px;
+	width: 370px;
+}
+.photo {
+	width: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #454545;
+}
+.contacts {
+	margin-bottom: 40px;
+}
+.aside__contact {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 27px;
+	color: #FFFFFF;
+	margin-left: 30px;
+	margin-bottom: 8px;
+}
+.tel__mail {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	color: #FFFFFF;
+	margin-left: 30px;
+}
+.t__m {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	color: darkblue;
+}
+.li__aside {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	color: darkblue;
+	margin-left: 8px;
+}
+.skill {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	color: #FFFFFF;
+}
