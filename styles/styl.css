@@ -3,7 +3,7 @@
 * {
 	margin: 10;
 	padding: 10;
-	box-sizing: content-box;
+	box-sizing: border-box;
 	font-family: 'Alkatra', cursive;
 }
 body {
@@ -76,6 +76,27 @@ h3 {
 }
 .work {
 	margin-left: 80px;
+	padding-bottom: 5px;
+}
+.portfolio {
+	margin-left: 80px;
+}
+.task {
+	display: block;
+	width: 200px;
+	border: 1px solid darkblue;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+}
+a {
+	text-decoration: none;
+}
+.task:hover {
+	border: 2px solid #fff;
+	color: white;
+	background: #828FA9;
 }
 .aside {
 	background-color: #828FA9;
