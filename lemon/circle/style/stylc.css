@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.circle1{
+  width: 200px;
+  height: 200px;
+  margin-top:200px;
+  margin-left: 200px;
+  border: 70px solid white;
+  border-radius: 50%;
+  outline: 60px solid red;
+  background-color: darkblue;
+  padding: 20px auto 20px; 
+}
+.circle2{
+  width: 200px;
+  height: 200px;
+  margin-top:200px;
+  margin-left: 200px;
+  box-shadow: 0 0 0 60px #DE121F;
+  background-color: darkblue;
+  border: 70px solid white;
+  border-radius: 50%;
+}
+.circle3{
+  width: 200px;
+  height: 200px;
+  margin-left: 200px;
+  margin-top: 200px;
+  box-shadow: inset 0px 0px 0px 60px rgba(255,255,255,1);
+  border: 70px solid red;
+  border-radius: 50%;
+  background-color: darkblue;
+}
