@@ -4,7 +4,7 @@
 	margin: 10;
 	padding: 10;
 	box-sizing: border-box;
-	font-family: 'Alkatra', cursive;
+	font-family: 'Alkatra';
 }
 body {
 	background-color: #F0F0F0;
@@ -21,7 +21,7 @@ body {
 .about {
 	margin-top: 40px;
 	margin-left: 80px;
-	margin-right: 275px;
+	margin-right: 250px;
 	margin-bottom: 14px;
 	padding-bottom: 5px;
 }
