@@ -1,0 +1,970 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 30px 0;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+header div.logo {
+    display: flex;
+    align-items: center;
+}
+
+header div.logo img {
+    width: 45px;
+    height: 46px;
+    margin-right: 10px;
+}
+
+header div.logo span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+header nav.main-menu {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+header nav.main-menu ul.menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav.main-menu ul.menu-list li {
+    margin-right: 25px;
+}
+
+header nav.main-menu ul.menu-list li a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    opacity: 0.75;
+    color: #000000;
+    text-decoration: none;
+}
+
+header nav.main-menu ul.menu-list li a:hover {
+    color: #2196F3;
+}
+
+header nav.main-menu ul.menu-list li.active a {
+    color: #2196F3;
+}
+
+header nav.main-menu ul.menu-list li.active:after {
+    display: block;
+    content: "";
+    height: 3px;
+    margin-top: 2px;
+    width: 60%;
+    background-color: #2196F3;
+    border-radius: 1px;
+}
+
+header nav.secondary-menu {
+    display: flex;
+    align-items: center;
+}
+
+header nav.secondary-menu ul.menu-login {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav.secondary-menu ul.menu-login li + li {
+    margin-left: 30px;
+}
+
+header nav.secondary-menu ul.menu-login li a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #302F2F;
+    text-decoration: none;
+}
+
+header nav.secondary-menu ul.menu-login li a.btn {
+    padding: 10px 20px;
+    background: #2196F3;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+header nav.secondary-menu ul.menu-login li.divider {
+    display: flex;
+    width: 2px;
+    height: 25px;
+    background-color: #979797;
+}
+
+main {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+main section.main-banner {
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main div.column-left h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 0;
+    margin-top: 65px;
+}
+
+main div.column-left p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.87);  
+    margin-left: 115px;
+    margin-right: 46px;
+    margin: 0;
+    margin-top: 25px;
+}
+
+main div.column-left button {
+    margin-top: 25px;
+    background: #FFFFFF;
+    border: 1px solid #00BCD4;
+    box-shadow: 0px 3px 24px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00BCD4;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 22px;
+    padding-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+}
+
+main div.column-left button img {
+    margin-left: 20px;
+}
+
+main section.departments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+main section.departments div.departments-1,
+main section.departments div.departments-2,
+main section.departments div.departments-3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main section.departments div.departments-1 a,
+main section.departments div.departments-2 a,
+main section.departments div.departments-3 a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+main section.departments div.departments-1 a:hover,
+main section.departments div.departments-2 a:hover,
+main section.departments div.departments-3 a:hover {
+    color: #2196F3;
+}
+
+main section.departments div.departments-1.active a,
+main section.departments div.departments-2.active a,
+main section.departments div.departments-3.active a {
+    color: #2196F3;
+} 
+
+main section.departments div.departments-1.active:after {
+    content: "";
+    background: #2196F3;
+    border-radius: 3px;
+    width: 150px;
+    height: 6px;
+    margin-top: 10px;
+    display: block;
+}
+
+main section.departments div.departments-1 h4,
+main section.departments div.departments-2 h4,
+main section.departments div.departments-3 h4 {
+    margin: 0;
+    padding: 0;
+}
+
+main section.departments div.departments-1 p,
+main section.departments div.departments-2 p,
+main section.departments div.departments-3 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 0;
+    padding: 0;
+    margin-top: 7px;
+}
+
+main section.departments div.sep {
+   background-color:  rgba(0, 0, 0, 0.12);
+    width: 1px;
+    height: 63px;
+    margin-top: 12px;
+}
+
+main section.about-us {
+    margin-top: 70px;
+    display: flex;
+}
+
+main section.about-us div.about-us-text p {
+    margin-top: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+main section.about-us div.about-us-text h4.head {
+    margin: 120px 0 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+main section.about-us div.about-us-text div.number {
+    display: flex;
+    margin-top: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: space-between;
+}
+
+main section.about-us div.about-us-text div.number div.number500 {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+main section.about-us div.about-us-text div.number div.number200,
+main section.about-us div.about-us-text div.number div.number500,
+main section.about-us div.about-us-text div.number div.number300 {
+    flex: 1;
+}
+
+main section.about-us div.about-us-text div.number div.number200 h4,
+main section.about-us div.about-us-text div.number div.number500 h4,
+main section.about-us div.about-us-text div.number div.number300 h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 35px 0 0;
+}
+
+main section.about-us div.about-us-text div.number div.number200 .sep,
+main section.about-us div.about-us-text div.number div.number500 .sep,
+main section.about-us div.about-us-text div.number div.number300 .sep {
+    width: 70px;
+    height: 12px;
+    background: #2196F3;
+    border-radius: 19px;
+    margin: 30px auto 0;
+}
+
+main section.about-us div.about-us-text div.number div.number200 p,
+main section.about-us div.about-us-text div.number div.number500 p,
+main section.about-us div.about-us-text div.number div.number300 p {
+    padding: 0;
+    margin: 15px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 48px;
+}
+
+main section.our-values {
+    display: flex;
+    margin-top: 80px;
+}
+
+
+main section.our-values div.our-values-img {
+    margin-right: 75px ;
+}
+
+main section.our-values div.our-values-text1 h4.head {
+    margin: 70px 0 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+main section.our-values div.our-values-text1 p {
+    margin-top: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+main section.our-values div.our-values-text1 div.nulla-boxes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 40px;
+    margin-top: 35px;
+}
+
+main section.our-values div.our-values-text1 div.nulla-boxes-grid div.nulla-grid-item div.item-icon {
+    background: #BBDEFB;
+    border-radius: 6px;
+    transform: rotate(45deg);
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section.our-values div.our-values-text1 div.nulla-boxes-grid div.nulla-grid-item div.item-icon img {
+    transform: rotate(-45deg);
+}
+
+main section.our-values div.our-values-text1 div.nulla-boxes-grid div.nulla-grid-item div.item-locate {
+    background: #B2EBF2;
+}
+main section.our-values div.our-values-text1 div.nulla-boxes-grid div.nulla-grid-item div.item-icon.item-speedometer {
+    background: #EDE7F6;
+}
+main section.our-values div.our-values-text1 div.nulla-boxes-grid div.nulla-grid-item div.item-icon.item-bulb {
+    background: #FBEABB;
+}
+
+main section.contact {
+    background: #2196F3;
+    border-radius: 24px;
+    margin-top: 160px;
+    display: flex;
+}
+
+main section.contact div.ready {
+    padding-left: 75px;
+    padding-bottom: 45px;
+    padding-right: 25px;
+    padding-top: 45px;
+    flex: 1;
+}
+
+main section.contact div.ready h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+main section.contact div.ready p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: 15px;
+}
+
+main section.contact div.write-to-us {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-right: 105px;
+}
+
+main section.contact div.write-to-us button {
+    background: #FFFFFF;
+    border: 1px solid #2196F3;
+    box-shadow: 0px 3px 24px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2196F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+}
+
+main section.contact div.write-to-us button img {
+    margin-left: 15px;
+}
+
+main section.ve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 85px;
+}
+
+main section.ve img + img {
+    margin-left: 95px;
+}
+
+main section.case {
+    display: flex;
+    margin-top: 160px;
+}
+
+main section.case div.case-studies {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+}
+
+main section.case div.case-studies h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 78px;
+    color: #0D47A1;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+main section.case div.case-studies button {
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 7px 25px;
+    text-align: left;
+}
+
+main section.case div.case-studies button.active, main section.case div.case-studies button:hover {
+    background: #BBDEFB;
+    border-radius: 8px;
+    color: #0D47A1;
+}
+
+main section.case div.case-studies button:hover {
+    cursor: pointer;
+}
+
+main section.case div.images {
+    margin-left: 90px;
+}
+
+main section.case div.images div.tab-item {
+    display: none;
+    grid-template:
+        "all-1 b" 1fr
+        "all-1 c" 1fr
+        "d e" 1fr / 1fr 1fr;
+    padding: 30px 20px 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+main section.case div.images div.tab-item.active {
+    display: grid;
+}
+
+main section.case div.images .image-item {
+    position: relative;
+    width: 390px;
+    height: 190px;
+}
+
+main section.case div.images .image-item.all-1 {
+    grid-area: all-1;
+}
+
+main section.case div.images .image-item .details {
+    display: flex;
+}
+
+main section.case div.images .details .h4-p h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color:white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main section.case div.images .details .h4-p p {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: white;
+margin-top: 10px;
+margin-bottom: 0;
+}
+
+main section.case div.images .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+main section.case div.images .details img {
+    width: 50px;
+    height: 50px;
+    margin: 7px 15px 15px;
+}
+
+main section.case div.images .image-item:first-child {
+    height: 390px;
+}
+
+main section.case div.images .image-item .preview {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+main section.case div.images div.all a h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+main section.case div.images h4.item-header {
+    color: #FFFFFF;
+} 
+
+main section.case div.images p.item-descr {
+    color: #FFFFFF;
+}
+
+main section.our-services {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+main section.our-services .heading, main section.our-services .scroll-list, main section.our-services .scroll-nav {
+    z-index: 2;
+    position: relative;
+}
+
+main section.our-services div.content div.arrow-left {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    transform: rotate(-45deg);
+    right: -200px;
+    top: -100px;
+    border-top: 30px solid rgb(178, 235, 242);
+    border-left: 30px solid rgb(178, 235, 242);
+    z-index: 0;
+    background-color: #fcfcfc;
+}
+
+main section.our-services div.content div.heading div h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    margin: 5px 0 0;
+    color:#0D47A1;
+}
+
+main section.our-services div.content div.heading div.action a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 42px; 
+    color: #2196F3;  
+    text-transform: uppercase;
+    text-decoration: none;
+ }
+
+ main section.our-services div.content div.heading  {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+ main section.our-services div.content {
+    background-color: rgba(33, 150, 243, 0.1);
+    padding: 0;
+    margin: 0;
+ }
+
+ main section.our-services div.content div.scroll-list {
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    transform: translate(-58%);
+}
+
+ main section.our-services div.content div.scroll-list div.list-item {
+    background-color: white;
+    margin: 30px 7.5px 15px;
+    padding: 0 10px 10px;
+    border-radius: 5px;
+}
+
+main section.our-services div.content div.scroll-list div.list-item img {
+    border-radius: 10px;
+    margin-top: -20px;
+}
+
+main section.our-services div.content div.scroll-list div.list-item h5 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+main section.our-services div.content div.scroll-list div.list-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0D47A1;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid rgba(33, 150, 243, 1);
+    padding: 5px 15px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+main section.our-services div.content div.scroll-list div.list-item h5 {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+main section.our-services div.content div.scroll-list div.list-item p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 15px 0;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+main section.our-services div.content div.scroll-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15%;
+}
+
+main section.our-services div.content div.scroll-nav .nav-arrow {
+    color:#0D47A1;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid transparent;
+    margin-bottom: -15px;
+}
+
+main section.our-services div.content div.scroll-nav .nav-arrow:hover, main section.our-services div.content div.scroll-nav .nav-arrow:focus {
+    border-color: #0D47A1;
+}
+
+main section.our-services div.content div.scroll-nav .nav-arrow.left {
+    margin-right: 15px;
+}
+
+footer div.footer-content {
+    display: flex;
+    margin-top: 80px;
+    padding-top: 55px;
+    padding-bottom: 110px;
+    position: relative;
+}
+
+footer .rec-bg-top {
+    width: 190px;
+    height: 190px;
+    background: #2196F3;
+    opacity: 0.05;
+    border-radius: 18px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+footer .rec-bg-bottom {
+    transform: rotate(45deg);
+    width: 255px;
+    height: 254px;
+    position: absolute;
+    background: #00BCD4;
+    mix-blend-mode: normal;
+    opacity: 0.05;
+    border-radius: 30px;
+}
+
+footer .rec-bg-top.rec-left {
+    left: 21px;
+    top: 95px;
+}
+
+footer .rec-bg-top.rec-right {
+    right: 28px;
+    top: 0;
+}
+
+footer .rec-bg-bottom.rec-left {
+    left: 43px;
+    top: 150px;
+}
+
+footer .rec-bg-bottom.rec-right {
+    right: 55px;
+    top: 27px;
+}
+
+footer .info {
+    width: 285px;
+}
+
+footer div.info div.logo {
+    display: flex;
+    align-items: center;
+}
+
+footer div.info div.logo span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+footer div.info div.logo img {
+    width: 45px;
+    height: 46px;
+    margin-right: 10px;
+}
+
+footer div.info .agency-about {
+    margin-top: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+footer div.info .copyright {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.54);
+    margin-top: 40px;
+}
+
+footer div.links {
+    margin-left: 25px;
+    margin-right: 86px;
+    display: flex;
+}
+
+footer div.links .link-item h4 {
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #0D47A1;
+    margin-top: 0;
+}
+
+footer div.links .link-item ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer div.links .link-item ul li {
+    margin-top: 15px;
+}
+
+footer div.links .link-item ul li a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;    
+}
+
+footer div.links .services {
+    margin-left: 80px;
+    margin-right: 55px;
+}
+
+footer div.socials .social-media {
+    display: flex;
+}
+
+footer div.socials {
+    margin-top: 30px;
+}
+
+footer div.socials ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+footer div.languages {
+    border: 1px solid #2196F3;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+footer div.languages select {
+    border: none;
+    border-radius: 0;
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-left: 10px;
+}
+
+footer div.languages select:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+    header, main, footer {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header, main, footer {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}
